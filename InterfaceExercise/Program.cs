@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace InterfaceExercise
 {
@@ -6,6 +7,56 @@ namespace InterfaceExercise
     {
         static void Main(string[] args)
         {
+
+            Car car1 = new Car();
+            car1.HasTrunk = true;
+            car1.HasFrontWheelDrive = true;
+            car1.NumberOfWheels = 4;
+            car1.IsDriveable = true;
+            car1.HasSteeringWheel = true;
+            car1.MakesSound = "Beep Beep";
+            car1.Logo = "Audi";
+            car1.HasTargetMarket = true;
+
+
+
+            SUV suv1 = new SUV();
+            suv1.NumberOfSeats = 8;
+            suv1.HasAllWheelDrive = true;
+            suv1.NumberOfWheels = 4;
+            suv1.IsDriveable = true;
+            suv1.HasSteeringWheel = true;
+            suv1.MakesSound = "Honk Honk";
+            suv1.Logo = "Ford";
+            suv1.HasTargetMarket = true;
+
+            
+
+
+            Truck truck1 = new Truck();
+            truck1.HasTruckBed = true;
+            truck1.HasRollBar = true;
+            truck1.NumberOfWheels = 4;
+            truck1.IsDriveable = true;
+            truck1.HasSteeringWheel = true;
+            truck1.MakesSound = "Ooooga";
+            truck1.Logo = "GMC";
+            truck1.HasTargetMarket = true;
+
+
+            car1.DisplayDetails();
+            truck1.DisplayDetails();
+            suv1.DisplayDetails();
+           
+ 
+
+
+
+
+
+
+
+
             //TODO Be sure to follow BEST PRACTICES when creating classes and interfaces
 
             //Create 2 Interfaces called IVehicle & ICompany
